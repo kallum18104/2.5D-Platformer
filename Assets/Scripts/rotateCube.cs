@@ -5,7 +5,7 @@ using UnityEngine;
 public class rotateCube : MonoBehaviour
 {
 
-    public bool isRotated;
+    static public bool isRotated;
     public GameObject player;
 
     void Start()

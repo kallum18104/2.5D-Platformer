@@ -62,6 +62,17 @@ public class playerScript : MonoBehaviour
             CameraShake.shakeDuration = 0.2f;
         }
 
+        if (rotateCube.isRotated)
+        {
+            leftDash = new Vector3(0.0f, 0.0f, 2.0f);
+            rightDash = new Vector3(0.0f, 0.0f, -2.0f);
+        }
+        else
+        {
+            leftDash = new Vector3(-2.0f, 0.0f, 0.0f);
+            rightDash = new Vector3(2.0f, 0.0f, 0.0f);
+        }
+
       
     }
 
