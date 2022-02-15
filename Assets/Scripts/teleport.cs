@@ -7,7 +7,7 @@ public class teleport : MonoBehaviour
     public Transform teleportTarget;
     public GameObject thePlayer;
 
-    private void OnTriggerEnter(Collider plyr)
+    private void OnTriggerEnter(Collider collider)
     {
         thePlayer.transform.position = teleportTarget.transform.position;
         if (rotateCube.isRotated)

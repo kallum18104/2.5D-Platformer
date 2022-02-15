@@ -11,6 +11,8 @@ public class playerScript : MonoBehaviour
     public bool isGrounded;
     public Vector3 rightDash;
     public Vector3 leftDash;
+    public float cooldowntime = 1;
+    private float nextDashTime = 0;
 
     public Rigidbody rb;
 
@@ -50,17 +52,26 @@ public class playerScript : MonoBehaviour
             isGrounded = false;
         }  
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Time.time > nextDashTime)
         {
-            rb.AddForce(rightDash * dashForce, ForceMode.Impulse);
-            CameraShake.shakeDuration = 0.1f;
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                rb.AddForce(rightDash * dashForce, ForceMode.Impulse);
+                CameraShake.shakeDuration = 0.1f;
+                nextDashTime = Time.time + cooldowntime;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                rb.AddForce(leftDash * dashForce, ForceMode.Impulse);
+                CameraShake.shakeDuration = 0.2f;
+                nextDashTime = Time.time + cooldowntime;
+
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            rb.AddForce(leftDash * dashForce, ForceMode.Impulse);
-            CameraShake.shakeDuration = 0.2f;
-        }
+       
 
         if (rotateCube.isRotated)
         {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class deathScript : MonoBehaviour
+public class deathScript : health
 {
     public bool isDead;
     public GameObject deathUI;
@@ -13,18 +13,18 @@ public class deathScript : MonoBehaviour
     public string leveltoLoad;
     void Start()
     {
-        isDead = false;
+        playerHealth = 100;
     }
 
     // Update is called once per frame
     void OnCollisionEnter(Collision Player)
     {
-        isDead = true;
+        playerHealth = 0;
     }
 
     void Update()
     {
-        if (isDead == true)
+        if (playerHealth == 0)
         {
             Timer.SetActive(false);
             player.SetActive(false);
