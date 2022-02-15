@@ -13,9 +13,10 @@ public class jumpPad : MonoBehaviour
         leftJump = new Vector3(4.0f, 2.0f, 0.0f);
     }
 
-    // Update is called once per frame
+   
     void OnCollisionEnter()
     {
+      // adds a vector3 force to the rigidbody and adds camerashake.
         rb.AddForce(leftJump * padForce, ForceMode.Impulse);
         CameraShake.shakeDuration = 0.1f;
     }

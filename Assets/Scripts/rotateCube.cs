@@ -10,13 +10,16 @@ public class rotateCube : MonoBehaviour
 
     void Start()
     {
+        //player isn't rotated at initial spawn
         isRotated = false;
     }
 
     void OnCollisionEnter(Collision collision)
     {
+       //when they collide with a rotation point, this is executed if they aren't already rotated.
         if (isRotated == false)
         {
+            //rotates the player by 90 degrees and sets the isRotated bool to be true.
             player.transform.Rotate(0, 90, 0, Space.World);
             isRotated = true;
         }

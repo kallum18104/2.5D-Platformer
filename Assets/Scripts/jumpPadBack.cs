@@ -16,6 +16,8 @@ public class jumpPadBack : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter()
     {
+        // adds a vector3 force to the rigidbody and adds camerashake.
+
         rb.AddForce(leftJump * padForce, ForceMode.Impulse);
         CameraShake.shakeDuration = 0.1f;
     }
