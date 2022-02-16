@@ -5,7 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class mainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public GameObject SettingsMenu;
+    public GameObject MainMenu;
+    public bool isMute;
+
+
     void Start()
     {
         
@@ -21,4 +26,27 @@ public class mainMenu : MonoBehaviour
         Application.Quit();
         Debug.Log("quit game!");
     }
+
+    public void settingsMenu()
+    {
+        SettingsMenu.SetActive(true);
+        MainMenu.SetActive(false);
+
+    }
+
+    public void backButton()
+    {
+        SettingsMenu.SetActive(false);
+        MainMenu.SetActive(true);
+    }
+
+    public void mute()
+    {
+        isMute = !isMute;
+        AudioListener.volume = isMute ? 0 : 1;
+    }
+
+
+
+
 }

@@ -9,6 +9,7 @@ ScriptsOnlyBuild:
     - jumpPadLeft
     - mainMenu
     - movePlatform
+    - pauseMenu
     - playerScript
     - rotateCube
     - teleport
@@ -80,6 +81,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1726}
     - Class: 114
+      Script: {instanceID: 1728}
+    - Class: 114
       Script: {instanceID: 1950}
     - Class: 114
       Script: {instanceID: 1958}
@@ -89,6 +92,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2274}
     - Class: 114
       Script: {instanceID: 2378}
+    - Class: 114
+      Script: {instanceID: 2420}
     - Class: 114
       Script: {instanceID: 2488}
     - Class: 114
@@ -101,6 +106,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2904}
     - Class: 114
       Script: {instanceID: 4032}
+    - Class: 114
+      Script: {instanceID: 4258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -165,6 +172,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1726}
     - Class: 114
+      Script: {instanceID: 1728}
+    - Class: 114
       Script: {instanceID: 1950}
     - Class: 114
       Script: {instanceID: 1958}
@@ -174,6 +183,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2274}
     - Class: 114
       Script: {instanceID: 2378}
+    - Class: 114
+      Script: {instanceID: 2420}
     - Class: 114
       Script: {instanceID: 2488}
     - Class: 114
@@ -190,6 +201,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3944}
     - Class: 114
       Script: {instanceID: 4032}
+    - Class: 114
+      Script: {instanceID: 4258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -254,6 +267,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1726}
     - Class: 114
+      Script: {instanceID: 1728}
+    - Class: 114
       Script: {instanceID: 1950}
     - Class: 114
       Script: {instanceID: 1958}
@@ -263,6 +278,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2274}
     - Class: 114
       Script: {instanceID: 2378}
+    - Class: 114
+      Script: {instanceID: 2420}
     - Class: 114
       Script: {instanceID: 2534}
     - Class: 114
@@ -277,6 +294,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3944}
     - Class: 114
       Script: {instanceID: 4032}
+    - Class: 114
+      Script: {instanceID: 4258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -447,6 +466,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2904}
     - Class: 114
       Script: {instanceID: 4032}
+    - Class: 114
+      Script: {instanceID: 4258}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -560,7 +581,7 @@ ScriptsOnlyBuild:
     className: jumpPadLeft
   - hash:
       serializedVersion: 2
-      Hash: c36d9b54c1269bb27a148f412180da25
+      Hash: bd131ff789c99763672d62fbb98b3155
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: deathScript
@@ -1166,6 +1187,12 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 59ea02223a0745beb59c70e72f3ed2ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: pauseMenu
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1195,4 +1222,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level01.unity
   - Assets/Scenes/Level02.unity
   - Assets/Scenes/Level03.unity
-  playerPath: E:/College Work/Unity/2.5D Platformer/Builds/0.4/2.5D Platformer.exe
+  playerPath: E:/College Work/Unity/2.5D Platformer/Builds/0.5/2.5D Platformer.exe
