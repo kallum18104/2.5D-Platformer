@@ -13,7 +13,11 @@ public class mainMenu : MonoBehaviour
 
     void Start()
     {
-        
+    }
+
+    void Update()
+    {
+
     }
 
     public void startGame()

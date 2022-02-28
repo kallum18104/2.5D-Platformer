@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class endScreen : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public bool isFinished = false;
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;

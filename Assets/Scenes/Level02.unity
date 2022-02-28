@@ -987,6 +987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1689107421}
+  plyr: {fileID: 1689107422}
 --- !u!65 &520634686
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3110,6 +3111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   teleportTarget: {fileID: 614210887}
   thePlayer: {fileID: 1689107421}
+  plyr: {fileID: 1689107422}
 --- !u!65 &1709220756
 BoxCollider:
   m_ObjectHideFlags: 0

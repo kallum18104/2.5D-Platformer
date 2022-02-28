@@ -380,6 +380,7 @@ MonoBehaviour:
   - {fileID: 7269864558318996219, guid: 271c924a7542fda4487594798fc8a84d, type: 3}
   - {fileID: 7060326632668011738, guid: d44d15bf5a7f33d4e9e0457dedb9112c, type: 3}
   - {fileID: 7060326632668011738, guid: c913e85d9adc83d48ade848e21aceca9, type: 3}
+  - {fileID: 3396836400610603052, guid: 2e14938f4cba2c84aac19902a6ba9854, type: 3}
   player: {fileID: 1915255166}
 --- !u!1 &1282138242
 GameObject:
@@ -607,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4308500445725252097, guid: 9d4aed0c5ae224b468dd86c6818a0b01, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.23
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 4308500445725252097, guid: 9d4aed0c5ae224b468dd86c6818a0b01, type: 3}
       propertyPath: m_LocalPosition.z
@@ -641,6 +642,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4308500445725252101, guid: 9d4aed0c5ae224b468dd86c6818a0b01, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 1915255165}
     - target: {fileID: 4308500445725252102, guid: 9d4aed0c5ae224b468dd86c6818a0b01, type: 3}
       propertyPath: m_Name
       value: Player
