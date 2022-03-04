@@ -24,8 +24,4 @@ public class endScreen : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void rick()
-    {
-        SceneManager.LoadScene("Rick");
-    }
 }
