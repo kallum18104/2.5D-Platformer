@@ -10,6 +10,7 @@ public class deathScript : health
     public GameObject player;
     public GameObject Timer;
     public GameObject DeathCamera;
+
     void Start()
     {
         playerHealth = 100;
@@ -21,6 +22,7 @@ public class deathScript : health
 
         //sets players health to 0 when falls to the collider.
         playerHealth = 0;
+       // AudioSource deathSFX = GetComponent<AudioSource>();
     }
 
     void Update()

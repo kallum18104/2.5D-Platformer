@@ -9,6 +9,7 @@ public class endScreen : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
+        rotateCube.isRotated = false;
 
     }
 
